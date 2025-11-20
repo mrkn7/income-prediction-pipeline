@@ -1,27 +1,27 @@
-# 🚀 Income Classification & Analysis Pipeline
+# Income Classification & Analysis Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![R-to-Python](https://img.shields.io/badge/Refactor-R_to_Python-green)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 
-## 📖 Overview
+## Overview
 This project is a comprehensive refactor of a statistical analysis study (originally developed in R for STAT 412) into a production-ready **Python Machine Learning Pipeline**.
 
 The objective is to predict whether an individual's annual income exceeds $50K based on census data (`salary.csv`), utilizing advanced feature engineering and supervised learning algorithms.
 
-## 🔄 Project Evolution (R → Python)
+## Project Evolution (R → Python)
 The original study utilized **R (dplyr, caret, VIM)** for statistical inference. This repository modernizes the workflow using **Python (Pandas, Scikit-Learn Pipelines)** to demonstrate:
 - **Reproducibility:** End-to-end script from raw data to model evaluation.
 - **Data Engineering:** Handling missing values (`?` to `NaN`), grouping sparse categories (e.g., Government jobs), and KNN imputation.
 - **Benchmarking:** Comparing Logistic Regression, Decision Trees, and Random Forest.
 
-## 🛠️ Key Features
+## Key Features
 * **Preprocessing Pipeline:** * Automatic handling of missing values (imputation).
     * Grouping high-cardinality features (e.g., `workclass`, `marital-status`).
     * One-Hot Encoding for categorical variables.
 * **Model Evaluation:** Precision, Recall, F1-Score, and Confusion Matrix analysis.
 
-## 📊 Results
+## Results
 Based on the test set evaluation, the **Random Forest Classifier** yielded the best balance between precision and recall.
 
 | Model | Accuracy | F1-Score |
@@ -30,8 +30,25 @@ Based on the test set evaluation, the **Random Forest Classifier** yielded the b
 | Logistic Regression | ~83% | 0.82 |
 | Decision Tree | ~81% | 0.80 |
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/mrkn7/income-prediction-pipeline.git](https://github.com/mrkn7/income-prediction-pipeline.git)
+
+ ## Citation
+
+ If you use this dataset or code in your research, please cite it as follows:
+
+ Erkan, M. A. (2025). Income Classification Benchmark: From R (Academic Study) to Python (ML Pipeline). Zenodo. [https://doi.org/10.5281/zenodo.17662766](https://doi.org/10.5281/zenodo.17662766)
+
+## Bibtex
+
+@misc{erkan2025income,
+  author       = {Erkan, Mehmet Ali},
+  title        = {Income Classification Benchmark: From R (Academic Study) to Python (ML Pipeline)},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17662766},
+  url          = {[https://doi.org/10.5281/zenodo.17662766](https://doi.org/10.5281/zenodo.17662766)}
+}
