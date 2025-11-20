@@ -1,37 +1,37 @@
-# 📊 Benchmarking Supervised Learning for Income Classification
+# 🚀 Income Classification & Analysis Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![R-to-Python](https://img.shields.io/badge/Refactor-R_to_Python-green)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Status-Completed-green)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## 📖 Overview
-This project implements an end-to-end Machine Learning pipeline to predict whether an individual's annual income exceeds $50K based on census data. The study focuses on benchmarking various supervised learning algorithms and interpreting model decisions using feature importance analysis.
+This project is a comprehensive refactor of a statistical analysis study (originally developed in R for STAT 412) into a production-ready **Python Machine Learning Pipeline**.
 
-Unlike standard implementations, this project utilizes **Scikit-Learn Pipelines** for robust preprocessing and prevents data leakage.
+The objective is to predict whether an individual's annual income exceeds $50K based on census data (`salary.csv`), utilizing advanced feature engineering and supervised learning algorithms.
 
-## 🎯 Objectives
-- **Preprocessing:** Handling missing values, encoding categorical variables, and scaling numerical features using `ColumnTransformer`.
-- **Modeling:** Comparing Logistic Regression, Decision Trees, and Random Forest Classifiers.
-- **Evaluation:** Assessing performance using Accuracy, F1-Score, and ROC-AUC metrics.
+## 🔄 Project Evolution (R → Python)
+The original study utilized **R (dplyr, caret, VIM)** for statistical inference. This repository modernizes the workflow using **Python (Pandas, Scikit-Learn Pipelines)** to demonstrate:
+- **Reproducibility:** End-to-end script from raw data to model evaluation.
+- **Data Engineering:** Handling missing values (`?` to `NaN`), grouping sparse categories (e.g., Government jobs), and KNN imputation.
+- **Benchmarking:** Comparing Logistic Regression, Decision Trees, and Random Forest.
 
-## 🛠️ Technologies Used
-- **Python:** Core programming language.
-- **Pandas & NumPy:** Data manipulation.
-- **Scikit-Learn:** Modeling and preprocessing pipelines.
-- **Matplotlib & Seaborn:** Exploratory Data Analysis (EDA).
+## 🛠️ Key Features
+* **Preprocessing Pipeline:** * Automatic handling of missing values (imputation).
+    * Grouping high-cardinality features (e.g., `workclass`, `marital-status`).
+    * One-Hot Encoding for categorical variables.
+* **Model Evaluation:** Precision, Recall, F1-Score, and Confusion Matrix analysis.
 
-## 📊 Model Performance
-The Random Forest Classifier achieved the highest performance metrics, demonstrating robustness against overfitting compared to simpler models.
+## 📊 Results
+Based on the test set evaluation, the **Random Forest Classifier** yielded the best balance between precision and recall.
 
-| Model | Accuracy | F1-Score (Weighted) | ROC-AUC |
-|-------|----------|---------------------|---------|
-| **Random Forest** | **85.3%** | **0.84** | **0.90** |
-| Logistic Regression | 84.1% | 0.83 | 0.88 |
-| Decision Tree | 81.5% | 0.81 | 0.74 |
+| Model | Accuracy | F1-Score |
+|-------|----------|----------|
+| **Random Forest** | **~85%** | **0.84** |
+| Logistic Regression | ~83% | 0.82 |
+| Decision Tree | ~81% | 0.80 |
 
 ## 🚀 How to Run
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/mrkn7/income-prediction-benchmark.git](https://github.com/mrkn7/income-prediction-benchmark.git)
+   git clone [https://github.com/mrkn7/income-prediction-pipeline.git](https://github.com/mrkn7/income-prediction-pipeline.git)
