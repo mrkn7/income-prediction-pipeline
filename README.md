@@ -43,7 +43,7 @@ Based on the test set evaluation, the **Random Forest Classifier** yielded the b
  Erkan, M. A. (2025). Income Classification Benchmark: From R (Academic Study) to Python (ML Pipeline). Zenodo. [https://doi.org/10.5281/zenodo.17662766](https://doi.org/10.5281/zenodo.17662766)
 
 ## Bibtex
-
+ ```bash
 @misc{erkan2025income,
   author       = {Erkan, Mehmet Ali},
   title        = {Income Classification Benchmark: From R (Academic Study) to Python (ML Pipeline)},
